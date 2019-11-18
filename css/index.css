@@ -138,6 +138,7 @@ body {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  background-color: #f0f0f0;
 }
 h1,
 h2,
@@ -188,9 +189,17 @@ header nav .links a {
   text-decoration: none;
   font-size: 1.5rem;
 }
+header nav .links a:hover {
+  color: #FDA77F;
+  text-decoration: underline;
+}
 header nav .links a:last-child {
   color: white;
   background-color: #445C3C;
+}
+header nav .links a:last-child:hover {
+  color: #FDA77F;
+  background-color: white;
 }
 .bottom-nav {
   width: 100%;
@@ -202,11 +211,16 @@ header nav .links a:last-child {
   flex-direction: row;
   justify-content: space-evenly;
   background-color: #445C3C;
+  padding: 2% 0;
 }
 .bottom-nav .bottom-links a {
   color: #C9D99E;
   text-decoration: none;
   font-size: 1.5rem;
+}
+.bottom-nav .bottom-links a:hover {
+  color: #445C3C;
+  background-color: #C9D99E;
 }
 footer {
   width: 100%;
@@ -225,7 +239,7 @@ footer {
 }
 .top-content button {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   color: #445C3C;
   background-color: #FDA77F;
   padding: 2% 4%;
@@ -238,6 +252,7 @@ footer {
 }
 .middle-content .middle-text {
   background-color: #C9D99E;
+  margin-top: 3%;
 }
 .middle-content .middle-text img {
   width: 60%;
