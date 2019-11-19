@@ -20,13 +20,24 @@
         margin: 0 auto;
         padding: 2% 4%;
         line-height: 2rem;
+        @media @mobile{
+            width: 94%;
+            font-size: 2rem;
+        }
+
         ul{
             li{
                 list-style-type: square;
                 margin-left: 5%;
+                @media @mobile{
+                    margin-bottom: 2%;
+                }
             }//closes li tag
             li:first-child{
                 list-style-type: upper-roman;
+                @media @mobile{
+                    margin-bottom: 2%;
+                }
             }//closes li:first-child
         }//closes ul tag
         ol{
@@ -34,6 +45,9 @@
             margin-left: 5%;
             li:first-child{
                 list-style-type: upper-roman;
+                @media @mobile{
+                    margin: 2% 0;
+                }
             }//closes li tag
         }//closes ol tag
     }//closes .bullet-list
@@ -49,9 +63,41 @@
     .width100();
     display: flex;
     .center();
+    @media @mobile{
+        flex-direction: column;
+    }
+    .text-one{
+        width: 50%;
+       @media @mobile{
+           width: 70%;
+           border: 1px dotted @green;
+           margin: 0 auto;
+           padding: 3% 0;
+           margin-bottom: 5%;
+       }
 
-    .text-one, .text-two{
+       div{
+        margin: 3% auto;
+        a{
+            color: @green;
+            background-color: @summer;
+            padding: 2% 6%;
+            &:hover{
+                color: @summer;
+                background-color: @green;
+            }//closes &:hover
+        }// closes a tag
+    }// closes div tag
+    }//closes .text-one
+
+    .text-two{
        width: 50%;
+       @media @mobile{
+           width: 70%;
+           border: 1px dotted @green;
+           margin: 0 auto;
+           padding: 3% 0;
+       }
 
         div{
             margin: 3% auto;
@@ -65,5 +111,5 @@
                 }//closes &:hover
             }// closes a tag
         }// closes div tag
-    }//closes .text-one & .text-two
+    }//closes .text-two
 }//closes .about-content
