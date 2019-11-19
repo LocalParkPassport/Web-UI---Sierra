@@ -6,36 +6,53 @@ header{
     nav{
         display: flex;
         .width100();
+        @media @mobile{
+            flex-direction: column;
+        }
 
         .logo{
             width: 40%;
+            @media @mobile{
+                width: 70%;
+                margin: 0 auto;
+            }
         }//closes .logo
         .links{
             width: 60%;
             text-align: right;
             margin: 8% 2% 0 0; 
+            @media @mobile{
+                .width100();
+                .center();
+            }
+
             a{
                 margin: 2%;
                 padding: 2%;
-                color: black;
-                text-decoration: none;
+                .navstyle(black; none);
                 font-size: 1.5rem;
 
                 &:hover{
-                    color: @orange;
-                    text-decoration: underline;
-                }
+                    .navstyle(@orange; underline);
+                }//closes &:hover
             }// closes a
            
-            a:last-child {
+            a:nth-child(5) {
                 color: white;
                 background-color: @green;
 
                 &:hover{
                     color: @orange;
                     background-color: white;
-                }
-            }
+                }//closes &:hover 
+            }//closes a:nth-child(5)
+            input{
+                width: 26%;
+                margin: 5% 2% 0% 0%;
+            }//closes input tag
+            button{
+                margin-right: 2%;
+            }//closes button tag
         }//closes .links
     }//closes the nav
 }//closes the header
@@ -53,14 +70,12 @@ header{
         padding: 2% 0;
         
         a{
-        color: @summer;
-        
-        text-decoration: none;
+        .navstyle(@summer; none);
         font-size: 1.5rem;
         &:hover{
             color: @green;
             background-color: @summer;
-        }
+        }//closes &:hover
         }//closes a tag
     }//closes .bottom-links
 }//closes .bottom-nav

@@ -5,10 +5,10 @@
     h1{
         .width100();
         padding: 2%;
-        text-align: center;
+        .center();
     }//closes h1 tag
     p{
-        text-align: center;
+        .center();
         .width100();
         padding: 3% 10%;
         margin: 0 auto;
@@ -40,15 +40,15 @@
 }//closes .about
 
 .team-title{
-    text-align: center;
+    .center();
     .width100();
     padding: 2% 0;
-}
+}//closes .team-title
 .about-content{
     padding: 2% 0;
     .width100();
     display: flex;
-    text-align: center;
+    .center();
 
     .text-one, .text-two{
        width: 50%;
@@ -62,8 +62,8 @@
                 &:hover{
                     color: @summer;
                     background-color: @green;
-                }
-            }
-        }
-    }
-}
+                }//closes &:hover
+            }// closes a tag
+        }// closes div tag
+    }//closes .text-one & .text-two
+}//closes .about-content

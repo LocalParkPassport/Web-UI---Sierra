@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   background-color: #f0f0f0;
@@ -179,13 +179,30 @@ header nav {
   display: flex;
   width: 100%;
 }
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
+}
 header nav .logo {
   width: 40%;
+}
+@media (max-width: 500px) {
+  header nav .logo {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 header nav .links {
   width: 60%;
   text-align: right;
   margin: 8% 2% 0 0;
+}
+@media (max-width: 500px) {
+  header nav .links {
+    width: 100%;
+    text-align: center;
+  }
 }
 header nav .links a {
   margin: 2%;
@@ -198,13 +215,20 @@ header nav .links a:hover {
   color: #FDA77F;
   text-decoration: underline;
 }
-header nav .links a:last-child {
+header nav .links a:nth-child(5) {
   color: white;
   background-color: #445C3C;
 }
-header nav .links a:last-child:hover {
+header nav .links a:nth-child(5):hover {
   color: #FDA77F;
   background-color: white;
+}
+header nav .links input {
+  width: 26%;
+  margin: 5% 2% 0% 0%;
+}
+header nav .links button {
+  margin-right: 2%;
 }
 .bottom-nav {
   width: 100%;
