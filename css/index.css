@@ -154,6 +154,10 @@ h2 {
   font-size: 3.2rem;
   padding-bottom: 1%;
 }
+h3 {
+  font-size: 2.9rem;
+  padding-bottom: 1%;
+}
 h4 {
   font-size: 2.5rem;
   padding-bottom: 1%;
@@ -173,6 +177,7 @@ header {
 }
 header nav {
   display: flex;
+  width: 100%;
 }
 header nav .logo {
   width: 40%;
@@ -289,4 +294,72 @@ footer {
 }
 footer div a {
   color: #FDA77F;
+}
+.about {
+  width: 100%;
+  background-color: #FDA77F;
+  padding-bottom: 3%;
+}
+.about h1 {
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+}
+.about p {
+  text-align: center;
+  width: 100%;
+  padding: 3% 10%;
+  margin: 0 auto;
+}
+.about .bullet-list {
+  width: 42%;
+  background-color: #FAE8C8;
+  display: block;
+  margin: 0 auto;
+  padding: 2% 4%;
+  line-height: 2rem;
+}
+.about .bullet-list ul li {
+  list-style-type: square;
+  margin-left: 5%;
+}
+.about .bullet-list ul li:first-child {
+  list-style-type: upper-roman;
+}
+.about .bullet-list ol {
+  list-style-type: square;
+  margin-left: 5%;
+}
+.about .bullet-list ol li:first-child {
+  list-style-type: upper-roman;
+}
+.team-title {
+  text-align: center;
+  width: 100%;
+  padding: 2% 0;
+}
+.about-content {
+  padding: 2% 0;
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.about-content .text-one,
+.about-content .text-two {
+  width: 50%;
+}
+.about-content .text-one div,
+.about-content .text-two div {
+  margin: 3% auto;
+}
+.about-content .text-one div a,
+.about-content .text-two div a {
+  color: #445C3C;
+  background-color: #C9D99E;
+  padding: 2% 6%;
+}
+.about-content .text-one div a:hover,
+.about-content .text-two div a:hover {
+  color: #C9D99E;
+  background-color: #445C3C;
 }
