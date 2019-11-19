@@ -242,10 +242,22 @@ header nav .links button {
   background-color: #445C3C;
   padding: 2% 0;
 }
+@media (max-width: 500px) {
+  .bottom-nav .bottom-links {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .bottom-nav .bottom-links a {
   color: #C9D99E;
   text-decoration: none;
   font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .bottom-nav .bottom-links a {
+    margin-bottom: 2%;
+    font-size: 3rem;
+  }
 }
 .bottom-nav .bottom-links a:hover {
   color: #445C3C;
@@ -266,6 +278,11 @@ footer {
 .top-content p {
   padding: 2%;
 }
+@media (max-width: 500px) {
+  .top-content p {
+    padding: 8%;
+  }
+}
 .top-content button {
   display: block;
   margin: 0 auto;
@@ -279,6 +296,11 @@ footer {
   margin-top: 2%;
   display: flex;
 }
+@media (max-width: 500px) {
+  .middle-content {
+    flex-direction: column;
+  }
+}
 .middle-content .middle-text {
   background-color: #C9D99E;
   margin-top: 3%;
@@ -288,6 +310,11 @@ footer {
   display: block;
   margin: 0 auto;
   padding: 10% 0;
+}
+@media (max-width: 500px) {
+  .middle-content .middle-text img {
+    width: 45%;
+  }
 }
 .middle-content .middle-text h2 {
   text-align: center;
