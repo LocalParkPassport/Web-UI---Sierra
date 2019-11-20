@@ -296,10 +296,15 @@ footer {
 .top-content button {
   display: block;
   margin: 0 auto;
-  color: #445C3C;
   background-color: #FDA77F;
   padding: 2% 4%;
   font-size: 2rem;
+}
+.top-content button a {
+  color: #445C3C;
+}
+.top-content button a:hover {
+  color: #C9D99E;
 }
 .middle-content {
   width: 100%;
@@ -314,6 +319,12 @@ footer {
 .middle-content .middle-text {
   background-color: #C9D99E;
   margin-top: 3%;
+  width: 33%;
+}
+@media (max-width: 500px) {
+  .middle-content .middle-text {
+    width: 99%;
+  }
 }
 .middle-content .middle-text img {
   width: 60%;
@@ -379,6 +390,7 @@ footer div a {
   margin: 0 auto;
   padding: 2% 4%;
   line-height: 2rem;
+  font-size: 1.2rem;
 }
 @media (max-width: 500px) {
   .about .bullet-list {
@@ -419,6 +431,7 @@ footer div a {
   text-align: center;
   width: 100%;
   padding: 2% 0;
+  text-decoration: underline;
 }
 .about-content {
   padding: 2% 0;
@@ -443,6 +456,9 @@ footer div a {
     margin-bottom: 5%;
   }
 }
+.about-content .text-one h3 {
+  color: #445C3C;
+}
 .about-content .text-one div {
   margin: 3% auto;
 }
@@ -450,6 +466,7 @@ footer div a {
   color: #445C3C;
   background-color: #C9D99E;
   padding: 2% 6%;
+  font-size: 1.6rem;
 }
 .about-content .text-one div a:hover {
   color: #C9D99E;
@@ -466,6 +483,9 @@ footer div a {
     padding: 3% 0;
   }
 }
+.about-content .text-two h3 {
+  color: #445C3C;
+}
 .about-content .text-two div {
   margin: 3% auto;
 }
@@ -473,6 +493,7 @@ footer div a {
   color: #445C3C;
   background-color: #C9D99E;
   padding: 2% 6%;
+  font-size: 1.6rem;
 }
 .about-content .text-two div a:hover {
   color: #C9D99E;
