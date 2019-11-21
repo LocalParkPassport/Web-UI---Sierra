@@ -6,12 +6,14 @@ header{
     nav{
         display: flex;
         .width100();
+        margin: 0 auto;
         @media @mobile{
             flex-direction: column;
         }
 
         .logo{
             width: 40%;
+            margin-left: 2%;
             @media @mobile{
                 width: 70%;
                 margin: 0 auto;
@@ -38,33 +40,41 @@ header{
             }// closes a
            
             a:nth-child(5) {
-                color: white;
+                color: rgb(240, 240, 240);
                 background-color: @green;
+                margin: 2% 0 2% 2%;
 
                 &:hover{
                     color: @orange;
-                    background-color: white;
+                    background-color: rgb(240, 240, 240);
                 }//closes &:hover 
             }//closes a:nth-child(5)
-            input{
-                width: 26%;
-                margin: 5% 2% 0% 0%;
-                @media @mobile{
-                    width: 70%;
-                }
-            }//closes input tag
-            button{
-                margin-right: 2%;
-                @media @mobile{
-                    width: 18%;
-                }
-            }//closes button tag
+                input{
+                    width: 26%;
+                    margin: 5% 5% 0% 0%;
+                    @media @mobile{
+                        width: 70%;
+                    }
+                }//closes input tag
+                button{
+                    margin-right: 2%;
+                    color: @green;
+                    background-color: @summer;
+                    @media @mobile{
+                        width: 18%;
+                    }
+                    &:hover{
+                        color: @orange;
+                        background-color: rgb(240, 240, 240);
+                    }
+                }//closes button tag
         }//closes .links
     }//closes the nav
 }//closes the header
 
 .bottom-nav{
     .width100();
+    margin: 0 auto;
 
     .bottom-links{
         .width100();

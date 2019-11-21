@@ -178,6 +178,7 @@ header {
 header nav {
   display: flex;
   width: 100%;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   header nav {
@@ -186,6 +187,7 @@ header nav {
 }
 header nav .logo {
   width: 40%;
+  margin-left: 2%;
 }
 @media (max-width: 500px) {
   header nav .logo {
@@ -216,16 +218,17 @@ header nav .links a:hover {
   text-decoration: underline;
 }
 header nav .links a:nth-child(5) {
-  color: white;
+  color: #f0f0f0;
   background-color: #445C3C;
+  margin: 2% 0 2% 2%;
 }
 header nav .links a:nth-child(5):hover {
   color: #FDA77F;
-  background-color: white;
+  background-color: #f0f0f0;
 }
 header nav .links input {
   width: 26%;
-  margin: 5% 2% 0% 0%;
+  margin: 5% 5% 0% 0%;
 }
 @media (max-width: 500px) {
   header nav .links input {
@@ -234,14 +237,21 @@ header nav .links input {
 }
 header nav .links button {
   margin-right: 2%;
+  color: #445C3C;
+  background-color: #C9D99E;
 }
 @media (max-width: 500px) {
   header nav .links button {
     width: 18%;
   }
 }
+header nav .links button:hover {
+  color: #FDA77F;
+  background-color: #f0f0f0;
+}
 .bottom-nav {
   width: 100%;
+  margin: 0 auto;
 }
 .bottom-nav .bottom-links {
   width: 100%;
@@ -277,6 +287,9 @@ footer {
   width: 100%;
   text-align: center;
   padding: 2% 0;
+}
+img {
+  margin: 0 auto;
 }
 .top-content {
   width: 100%;
@@ -359,10 +372,12 @@ footer {
   text-align: center;
   background-color: #445C3C;
   color: #FAE8C8;
+  margin: 0 auto;
 }
 footer {
   background-color: #FAE8C8;
   color: #FDA77F;
+  margin: 0 auto;
 }
 footer div a {
   color: #FDA77F;
@@ -371,6 +386,7 @@ footer div a {
   width: 100%;
   background-color: #FDA77F;
   padding-bottom: 3%;
+  margin: 0 auto;
 }
 .about h1 {
   width: 100%;
