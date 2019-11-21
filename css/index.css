@@ -216,12 +216,12 @@ header nav .links a:hover {
   text-decoration: underline;
 }
 header nav .links a:nth-child(5) {
-  color: white;
+  color: #f0f0f0;
   background-color: #445C3C;
 }
 header nav .links a:nth-child(5):hover {
   color: #FDA77F;
-  background-color: white;
+  background-color: #f0f0f0;
 }
 header nav .links input {
   width: 26%;
