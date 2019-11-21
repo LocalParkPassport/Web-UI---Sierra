@@ -49,7 +49,6 @@ header{
                     background-color: rgb(240, 240, 240);
                 }//closes &:hover 
             }//closes a:nth-child(5)
-            .search{
                 input{
                     width: 26%;
                     margin: 5% 5% 0% 0%;
@@ -59,11 +58,16 @@ header{
                 }//closes input tag
                 button{
                     margin-right: 2%;
+                    color: @green;
+                    background-color: @summer;
                     @media @mobile{
                         width: 18%;
                     }
+                    &:hover{
+                        color: @orange;
+                        background-color: rgb(240, 240, 240);
+                    }
                 }//closes button tag
-            }//closes .search
         }//closes .links
     }//closes the nav
 }//closes the header
